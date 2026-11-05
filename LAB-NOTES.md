@@ -14,6 +14,3 @@ This is a hybrid design: deterministic state for common system queries and an LL
 
 The session log preserves earlier outputs for comparison. The report labels each response as simulation, LLM or fallback. All activity so far is controlled local testing, not captured attacker traffic. Regression tests check memory consistency, disk totals, repeatability across sessions, and behavior when the model is unavailable.
 
-## Interview explanation
-
-“I found that a language model could produce convincing-looking terminal text while contradicting its own system details. I moved common machine facts into deterministic state and supplied those facts to the model for other responses. That improved repeatability without giving the model access to a real shell.”
